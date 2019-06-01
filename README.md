@@ -1,11 +1,4 @@
 # distance
 
-
-## Not properly tested
-## Stil Alpha
-
-A package that provides function to calculate Harvesine distance between points
-
-
-
-See examples folder for use
+A package that provides a simple Harvesine distance function. 
+Could be used to sort points by distance, see examples folder.
