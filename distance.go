@@ -29,7 +29,7 @@ func rad(deg float64) float64 {
 	return deg * math.Pi / 180
 }
 
-// Square returns two points, that represent a square box with center the given lat, lng and d*2 as lenght of side, d is in meters
+// Square returns two points, that represent a square box with center the given lat, lng and d*2 as length of side, d is in meters
 func Square(lat, lng, d float64) (Point, Point) {
 	maxLat := lat + (d/r)*(180/math.Pi)
 	minLat := lat - (d/r)*(180/math.Pi)
@@ -59,12 +59,12 @@ func (p Point) Square(d float64) (Point, Point) {
 	return Square(p.lat, p.lng, d)
 }
 
-// Lat
+// Lat returns point's latitude
 func (p Point) Lat() float64 {
 	return p.lat
 }
 
-// Lng
+// Lng returns point's longitude
 func (p Point) Lng() float64 {
 	return p.lng
 }
